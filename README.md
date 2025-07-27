@@ -51,7 +51,7 @@ next command
 </pre>
 
 cari dalam file tu 'permit root login', buang comment (uncomment) dan tukar argumen kedua dengan perkataan 'yes'
-<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard09.png" alt="Preview Image" width="90%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard01.png" alt="Preview Image" width="90%">
 
 keluar dan save configuration file seterusnya taip next command
 <pre>
@@ -68,7 +68,7 @@ Jom install extenstion tmux.
   # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
   # nano ~/.tmux.conf
 </pre>
-
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard02.png" alt="Preview Image" width="90%">an CTRL+b SHIF
 tambahkan ke dalam configuration file tersebut
 
 ```  
@@ -85,24 +85,45 @@ bind-key C-r run-shell '~/.tmux/plugins/tmux-resurrect/scripts/restore.sh'
 # TPM shortcut
 run '~/.tmux/plugins/tpm/tpm'
 ```
-
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard03.png" alt="Preview Image" width="90%">an CTRL+b SHIF
 ok run satu sesi tmux dulu
 <pre>
   # tmux
 </pre>
 
-kemudian CTRL+b SHIFT+I
-<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard03.png" alt="Preview Image" width="90%">
+kemudiT+I
+
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard04.png" alt="Preview Image" width="90%">
 tekan ESC apabila plugins selesai installed dalam tmux
 untuk keluar CTRL+b d
 
-check dan kill semua session
+Check dan kill semua session
 <pre>
   # tmux ls
   # tmux kill-server
   # tmux ls
+  # tmux new -s putrajaya
 </pre>
+
+Di dalam tmux sesi putrajaya tekan CTRL+b CTRL+s.
+
+Kemudian detach CTRL+b d
+
+check semula session
+<pre>
+  # tmux ls
+  # tmux kill-server
+  # tmux ls
+  # tmux
+</pre>
+
+Dalam tmux baru tanpa nama sesi atau "session-0" CTRL+b CTRL+r untuk restore
+
+Check semula session putrajaya dengan CTRL+b :
+taip
+```
+choose-session
+```
 
 
 
