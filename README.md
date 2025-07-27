@@ -7,8 +7,7 @@ LOKASiDEA, L01-46, Level 1, Menara Shaftsbury Putrajaya, Jalan Alamanda, Presint
 1. change root password
 1. set ssh
 1. tmux tutorial
-1. install docker.io
-1. install docker-compose
+1. install docker.io dan docker-compose
 1. install drupal
 1. k6 tutorial
 1. jmeter tutorial
@@ -183,6 +182,7 @@ Kalau detach dari mana-mana sesi boleh terus taip
 <pre>
   # tmux new -s install
 </pre>
+
 Atau jika masih lagi di dalam mana-mana sesi tmux boleh gunakan CTRL-b : dan taip
 
 ```
@@ -190,7 +190,7 @@ new -s install
 ```
 
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard27.png" alt="Preview Image" width="90%">
-boleh gunakan arrow pada keyboar ke atas dan ke bawah untuk pilih mana-mana sesi dalam tmux
+boleh gunakan arrow pada keyboard ke atas dan ke bawah untuk pilih mana-mana sesi dalam tmux
 
 ```
 choose-session
@@ -199,3 +199,51 @@ choose-session
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard28.png" alt="Preview Image" width="90%">
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard29.png" alt="Preview Image" width="90%">
 
+Di dalam sesi tmux: install
+
+<pre>
+  # apt update
+  # apt install docker.io docker-compose
+</pre>
+
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard30.png" alt="Preview Image" width="90%">
+
+Semak installed docker dan docker-compose
+
+<pre>
+  # which docker-compose && which docker
+</pre>
+
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard31.png" alt="Preview Image" width="90%">
+
+Semak volume, network dan container
+
+<pre>
+  # docker volume list
+  # docker network list
+  # docker ps
+</pre>
+
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard32.png" alt="Preview Image" width="90%">
+
+Untuk download docker image cuba
+<pre>
+  # clear
+  # docker pull prom/prometheus 
+  # docker pull prom/node-exporter
+  # docker pull grafana/grafana
+  # docker pull grafana/k6
+  # docker image ls
+  # docker images
+</pre>
+
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard33.png" alt="Preview Image" width="90%">
+
+#### Install Drupal
+<pre>
+  # clear
+  # git clone https://github.com/kelassir/baru
+  # cd export
+  # cd kelassir-drupal2
+  # docker-compose -d up
+</pre>
