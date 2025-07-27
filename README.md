@@ -117,16 +117,28 @@ check semula session
   # tmux ls
   # tmux
 </pre>
+Dalam tmux baru, tmux yang tiada nama sesi atau "session-0" ini cuba tekan CTRL+b :
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard10.png" alt="Preview Image" width="90%">
 
-Dalam tmux baru tanpa nama sesi atau "session-0" CTRL+b CTRL+r untuk restore
-
-Check semula session putrajaya dengan CTRL+b :
-
-Seterusnya pada prompt : sila taip
+Seterusnya pada prompt : sila taip 
 ```
 choose-session
 ```
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard11.png" alt="Preview Image" width="90%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard12.png" alt="Preview Image" width="90%">
 
+Dalam tmux baru tekan CTRL+b CTRL+r untuk restore
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard18.png" alt="Preview Image" width="90%">
+
+Check semula session putrajaya dengan CTRL+b :
+
+Seterusnya pada prompt : sila taip semula
+```
+choose-session
+```
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard20.png" alt="Preview Image" width="90%">
+
+Alhamdulillah session putrajaya berjaya dikembalikan walaupun tmux ls tidak menunjukkan kewujudan sebarang sesi atau server.
 
 
 
