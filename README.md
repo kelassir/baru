@@ -25,11 +25,11 @@ login dulu kali:kali
 
 kemudian buka root terminal emulator
 
-<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard13.png" alt="Preview Image" width="50%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard13.png" alt="Preview Image" width="75%">
 gunakan default password root:kali
 
 taip
-```
+```dan
 # passwd
 ```
 tukar kepada password baru seperti 'toor' atau lain-lain.
@@ -41,6 +41,20 @@ sebelum set service sshd jom kita semak IP Address Kali Linux dulu. Sila taip:
 ```
 # ip a
 ```
-Cuba lihat dapat eth0 (atau kemungkinan nama nic berbeza) jika menggunakan VMWare Player selalunya akan bermula dengan 192.168.X.X. Kenal pasti IP Address ini dan siap sedia download Third party SSH client seperti PUTTY dan MobaXterm.
+Cuba lihat pada eth0 (atau kemungkinan nama nic berbeza) jika menggunakan VMWare Player selalunya akan bermula dengan 192.168.X.X. Kenal pasti IP Address ini dan siap sedia download Third party SSH client seperti PUTTY dan MobaXterm.
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard09.png" alt="Preview Image" width="75%">
 
+next command
+```
+# nano /etc/ssh/sshd_config
+```
+cari dalam file tu 'permit root login', buang comment (uncomment) dan tukar argumen kedua dengan perkataan 'yes'
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard09.png" alt="Preview Image" width="75%">
+
+keluar dan save configuration file seterusnya taip next command
+```
+# systemctl enable ssh
+# systemctl start ssh
+```
+bukan third party dan cuba remote ke IP Address dengan port 22. Masukkan root dan password baru anda.
 
