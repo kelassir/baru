@@ -272,4 +272,6 @@ Run kan ke semua container melalui Docker-Compose secara Background (-d)
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard35.png" alt="Preview Image" width="90%">
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard38.png" alt="Preview Image" width="90%">
 
-Apabila siap buka browser dan akses ke ip-address: 6000 dan ip-address:6666
+Apabila siap installation sila buka browser dan akses ke ip-address: 20250 dan ip-address:20252
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard39.png" alt="Preview Image" width="90%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard40.png" alt="Preview Image" width="90%">
