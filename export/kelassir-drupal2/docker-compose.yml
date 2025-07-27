@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  drupal:
+    image: drupal:latest
+    ports:
+      - "6000:80"
+    volumes:
+      - ./drupal/volume1:/var/www/html
+    environment:
+      - DRUPAL_DB_HOST=mysql
+      - DRUPAL_DB_NAME=${MYSQL_DATABASE}
+      - DRUPAL_DB_USER=${MYSQL_USER}
+      - DRUPAL_DB_PASSWORD=${MYSQL_PASSWORD}
+    depends_on:
+      - mysql
+    networks:
+      - kelassir-drupal2-net
+
+  mysql:
+    image: mysql:5.7
+    ports:
+      - "6606:3306"
+    volumes:
+      - ./mysql/volume1:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    networks:
+      - kelassir-drupal2-net
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "6666:80"
+    environment:
+      - PMA_HOST=mysql
+      - PMA_USER=${MYSQL_USER}
+      - PMA_PASSWORD=${MYSQL_PASSWORD}
+    depends_on:
+      - mysql
+    networks:
+      - kelassir-drupal2-net
+
+volumes:
+  drupal_data:
+  mysql_data:
+
+networks:
+  kelassir-drupal2-net:
+    driver: bridge
