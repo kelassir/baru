@@ -140,5 +140,22 @@ choose-session
 
 Alhamdulillah session putrajaya berjaya dikembalikan walaupun tmux ls tidak menunjukkan kewujudan sebarang sesi atau server.
 
+Buka tab baru dengan menekan key CTRL+b c
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard21.png" alt="Preview Image" width="90%">
 
+Tukar nama tab dengan CTR+b ; dan taip "melaka"
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard22.png" alt="Preview Image" width="90%">
 
+Pergi ke tab 0 dengan CTRL+b 0
+Tukar nama tab dengan CTR+b ; dan taip "putrajaya"
+
+Keluar dari tmux dengan 
+CTRL-b d
+
+List dan masuk semula ke dalam sesi putrajaya
+<pre>
+  tmux ls
+  tmux a -t putrajaya
+</pre>
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard23.png" alt="Preview Image" width="90%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard24.png" alt="Preview Image" width="90%">
