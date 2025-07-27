@@ -147,16 +147,51 @@ Tukar nama tab dengan CTR+b ; dan taip "melaka"
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard22.png" alt="Preview Image" width="90%">
 
 Pergi ke tab 0 dengan CTRL+b 0
+
 Tukar nama tab dengan CTR+b ; dan taip "putrajaya"
 
-Keluar dari tmux dengan 
-CTRL-b d
+Keluar dari tmux dengan CTRL-b d
 
 List dan masuk semula ke dalam sesi putrajaya
 <pre>
-  tmux ls
-  tmux a -t putrajaya
+  # tmux ls
+  # tmux a -t putrajaya
 </pre>
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard23.png" alt="Preview Image" width="90%">
 
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard24.png" alt="Preview Image" width="90%">
+
+Pergi ke tab 1 dengan CTRL+b 1
+
+Tambah Row dengan CTRL+b "
+
+Tambah Column dengan CTRL+b %
+
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard26.png" alt="Preview Image" width="90%">
+
+Untuk bergerak antara Row dan Column gunakan arrow pada keyboard ke atas atau kebawah atau ke kiri atau ke kanan selepas prefix CTRL+B
+
+Untuk memadam Row, Column atau tab cuma taip arahan
+<pre>
+  # exit
+</pre>
+
+#### Install docker.io
+Kita mulakan dengan create sesi tmux dengan nama install
+
+Kalau detach dari mana-mana sesi boleh terus taip
+<pre>
+  # tmux new -s install
+</pre>
+Atau jika masih lagi di dalam mana-mana sesi tmux boleh gunakan CTRL-b : dan taip
+```
+new -s install
+```
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard27.png" alt="Preview Image" width="90%">
+boleh gunakan arrow pada keyboar ke atas dan ke bawah untuk pilih mana-mana sesi dalam tmux
+```
+choose-session
+```
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard28.png" alt="Preview Image" width="90%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard29.png" alt="Preview Image" width="90%">
+
