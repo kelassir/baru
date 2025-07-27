@@ -158,4 +158,5 @@ List dan masuk semula ke dalam sesi putrajaya
   tmux a -t putrajaya
 </pre>
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard23.png" alt="Preview Image" width="90%">
+
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard24.png" alt="Preview Image" width="90%">
