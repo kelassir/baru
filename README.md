@@ -184,14 +184,18 @@ Kalau detach dari mana-mana sesi boleh terus taip
   # tmux new -s install
 </pre>
 Atau jika masih lagi di dalam mana-mana sesi tmux boleh gunakan CTRL-b : dan taip
+
 ```
 new -s install
 ```
+
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard27.png" alt="Preview Image" width="90%">
 boleh gunakan arrow pada keyboar ke atas dan ke bawah untuk pilih mana-mana sesi dalam tmux
+
 ```
 choose-session
 ```
+
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard28.png" alt="Preview Image" width="90%">
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard29.png" alt="Preview Image" width="90%">
 
