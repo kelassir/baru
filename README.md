@@ -62,13 +62,13 @@ keluar dan save configuration file seterusnya taip next command
 bukan third party dan cuba remote ke IP Address dengan port 22. Masukkan root dan password baru anda.
 
 #### Tmux Tutorial
-Jom install extenstion tmux.
+Jom install extension tmux.
 <pre>
   # cd
   # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
   # nano ~/.tmux.conf
 </pre>
-<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard02.png" alt="Preview Image" width="90%">an CTRL+b SHIF
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard02.png" alt="Preview Image" width="90%">
 tambahkan ke dalam configuration file tersebut
 
 ```  
@@ -85,13 +85,14 @@ bind-key C-r run-shell '~/.tmux/plugins/tmux-resurrect/scripts/restore.sh'
 # TPM shortcut
 run '~/.tmux/plugins/tpm/tpm'
 ```
-<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard03.png" alt="Preview Image" width="90%">an CTRL+b SHIF
-ok run satu sesi tmux dulu
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard03.png" alt="Preview Image" width="90%">
+
+Ok cuba run satu sesi tmux dulu
 <pre>
   # tmux
 </pre>
 
-kemudiT+I
+kemudian CTRL+b SHIFT+I
 
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard04.png" alt="Preview Image" width="90%">
 tekan ESC apabila plugins selesai installed dalam tmux
@@ -120,7 +121,8 @@ check semula session
 Dalam tmux baru tanpa nama sesi atau "session-0" CTRL+b CTRL+r untuk restore
 
 Check semula session putrajaya dengan CTRL+b :
-taip
+
+Seterusnya pada prompt : sila taip
 ```
 choose-session
 ```
