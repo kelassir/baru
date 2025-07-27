@@ -25,7 +25,7 @@ login dulu kali:kali
 
 kemudian buka root terminal emulator
 
-<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard13.png" alt="Preview Image" width="75%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard13.png" alt="Preview Image" width="90%">
 gunakan default password root:kali
 
 taip
@@ -42,14 +42,14 @@ sebelum set service sshd jom kita semak IP Address Kali Linux dulu. Sila taip:
 # ip a
 ```
 Cuba lihat pada eth0 (atau kemungkinan nama nic berbeza) jika menggunakan VMWare Player selalunya akan bermula dengan 192.168.X.X. Kenal pasti IP Address ini dan siap sedia download Third party SSH client seperti PUTTY dan MobaXterm.
-<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard09.png" alt="Preview Image" width="75%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard09.png" alt="Preview Image" width="90%">
 
 next command
 ```
 # nano /etc/ssh/sshd_config
 ```
 cari dalam file tu 'permit root login', buang comment (uncomment) dan tukar argumen kedua dengan perkataan 'yes'
-<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard09.png" alt="Preview Image" width="75%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard09.png" alt="Preview Image" width="90%">
 
 keluar dan save configuration file seterusnya taip next command
 ```
@@ -57,4 +57,32 @@ keluar dan save configuration file seterusnya taip next command
 # systemctl start ssh
 ```
 bukan third party dan cuba remote ke IP Address dengan port 22. Masukkan root dan password baru anda.
+
+#### Tmux Tutorial
+Jom install extenstion tmux.
+```
+# cd
+# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# nano ~/.tmux.conf
+```
+tambahkan ke dalam configuration file tersebut
+<pre>
+  ```
+  
+# TPM
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+# Simpan dengan prefix + Ctrl-s
+bind-key C-s run-shell '~/.tmux/plugins/tmux-resurrect/scripts/save.sh'
+
+# Pulihkan dengan prefix + Ctrl-r
+bind-key C-r run-shell '~/.tmux/plugins/tmux-resurrect/scripts/restore.sh'
+
+# TPM shortcut
+run '~/.tmux/plugins/tpm/tpm'
+
+  ```
+</pre>
+
 
