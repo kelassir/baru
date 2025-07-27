@@ -25,7 +25,7 @@ login dulu kali:kali
 
 kemudian buka root terminal emulator
 
-<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard13.png" alt="Preview Image" width="25%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard13.png" alt="Preview Image" width="50%">
 gunakan default password root:kali
 
 taip
@@ -35,3 +35,12 @@ taip
 tukar kepada password baru seperti 'toor' atau lain-lain.
 
 ps - apabila password baru ditaip di terminal, ianya tidak akan kelihatan pada screen. bertawakallah, insyaAllah key stroke itu akan berjaya disimpan dalam terminal. root:kali atau kali:kali bermaksud username:password atau login:password
+
+#### Set SSH
+sebelum set service sshd jom kita semak IP Address Kali Linux dulu. Sila taip:
+```
+# ip a
+```
+Cuba lihat dapat eth0 (atau kemungkinan nama nic berbeza) jika menggunakan VMWare Player selalunya akan bermula dengan 192.168.X.X. Kenal pasti IP Address ini dan siap sedia download Third party SSH client seperti PUTTY dan MobaXterm.
+
+
