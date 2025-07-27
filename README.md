@@ -242,11 +242,16 @@ Untuk download docker image cuba
 #### Install Drupal
 <pre>
   # clear
+  # cd
+  # mkdir export
+  # cd export
   # git clone https://github.com/kelassir/baru
   # cd baru
   # cd kelassir-drupal2
   # nano .env
 </pre>
+
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard34.png" alt="Preview Image" width="90%">
 
 Isi maklumat sensitif di dalam .env
 
@@ -263,3 +268,5 @@ Run kan ke semua container melalui Docker-Compose secara Background (-d)
   # tree
   # docker-compose -d up
 </pre>
+
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard35.png" alt="Preview Image" width="90%">
