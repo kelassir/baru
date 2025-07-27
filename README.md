@@ -243,7 +243,23 @@ Untuk download docker image cuba
 <pre>
   # clear
   # git clone https://github.com/kelassir/baru
-  # cd export
+  # cd baru
   # cd kelassir-drupal2
+  # nano .env
+</pre>
+
+Isi maklumat sensitif di dalam .env
+
+```
+MYSQL_ROOT_PASSWORD=rootpass
+MYSQL_DATABASE=drupaldb
+MYSQL_USER=drupaluser
+MYSQL_PASSWORD=drupalpass
+```
+Run kan ke semua container melalui Docker-Compose secara Background (-d)
+<pre>
+  # pwd
+  # ls
+  # tree
   # docker-compose -d up
 </pre>
