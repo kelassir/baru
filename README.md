@@ -17,15 +17,21 @@ LOKASiDEA, L01-46, Level 1, Menara Shaftsbury Putrajaya, Jalan Alamanda, Presint
 
 #### Extract Fresh Kali-Linux-VMware Image
 Terus guna kalau download vmware image ini : [kali-linux-2025.2-vmware-amd64.7z](https://cdimage.kali.org/kali-2025.2/kali-linux-2025.2-vmware-amd64.7z)
+
 Kena install dulu kalau pakai iso kali ini : [kali-linux-2025.2-installer-amd64.iso](https://cdimage.kali.org/kali-2025.2/kali-linux-2025.2-installer-amd64.iso).
 
 #### Change Root Password
 login dulu kali:kali
+
 kemudian buka root terminal emulator
+
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard13.png" alt="Preview Image" width="25%">
 gunakan default password root:kali
+
 taip
 ```
 # passwd
 ```
 tukar kepada password baru seperti 'toor' atau lain-lain.
+
 ps - apabila password baru ditaip di terminal, ianya tidak akan kelihatan pada screen. bertawakallah, insyaAllah key stroke itu akan berjaya disimpan dalam terminal. root:kali atau kali:kali bermaksud username:password atau login:password
