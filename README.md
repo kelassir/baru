@@ -274,6 +274,27 @@ Run kan ke semua container melalui Docker-Compose secara Background (-d)
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard35.png" alt="Preview Image" width="90%">
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard38.png" alt="Preview Image" width="90%">
 
-Apabila siap installation sila buka browser dan akses ke ip-address: 20250 dan ip-address:20252
+Apabila docker container siap dijalankan sila buka browser dan akses ke ip-address: 20250 dan ip-address:20252
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard39.png" alt="Preview Image" width="90%">
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard40.png" alt="Preview Image" width="90%">
+
+Teruskan install Drupal atas Web Browser.
+
+#### k6 Tutorial
+Keluar dari semua tmux session kalau ada dengan CTRL+b d
+
+Buat sesi baru
+<pre>
+  # cd
+  # ls
+  # mkdir export2
+  # cd export2
+  # pwd
+  # git clone https://github.com/kelassir/baru
+  # cd kelassir-k6
+  # tmux new -s k6
+  # tree
+  # docker-compose -up -d
+</pre>
+
+
