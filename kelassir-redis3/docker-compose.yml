@@ -1,4 +1,4 @@
-version: '3.8'
+#version: '3.8'
 
 services:
   drupal3:
@@ -12,6 +12,8 @@ services:
       - DRUPAL_DB_NAME=${MYSQL_DATABASE}
       - DRUPAL_DB_USER=${MYSQL_USER}
       - DRUPAL_DB_PASSWORD=${MYSQL_PASSWORD}
+      - REDIS_HOST=redis3
+      - REDIS_PORT=6379
     depends_on:
       - mysql3
       - redis3
@@ -46,15 +48,28 @@ services:
       - kelassir-drupal3-net
 
   redis3:
-    image: redis:alpine
+    image: redis:latest
     ports:
       - "20203:6379"
     networks:
       - kelassir-drupal3-net
 
+  redis_insight3:
+    image: redis/redisinsight:latest
+    volumes:
+       - redis_insight_data3:/db
+    ports:
+      - "20204:5540"
+    depends_on:
+      - redis3
+    networks:
+      - kelassir-drupal3-net
+
+  
 volumes:
   drupal_data3:
   mysql_data3:
+  redis_insight_data3:
 
 networks:
   kelassir-drupal3-net:
