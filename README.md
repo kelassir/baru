@@ -294,7 +294,7 @@ Buat sesi baru
   # cd baru/kelassir-k6
   # tmux new -s k6
   # tree
-  # docker-compose -up -d
+  # docker-compose up -d
 </pre>
 
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard50.png" alt="Preview Image" width="90%">
