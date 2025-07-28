@@ -291,7 +291,7 @@ Buat sesi baru
   # cd export2
   # pwd
   # git clone https://github.com/kelassir/baru
-  # cd kelassir-k6
+  # cd baru/kelassir-k6
   # tmux new -s k6
   # tree
   # docker-compose -up -d
