@@ -297,4 +297,14 @@ Buat sesi baru
   # docker-compose -up -d
 </pre>
 
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard50.png" alt="Preview Image" width="90%">
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard52.png" alt="Preview Image" width="90%">
 
+Di manakah k6 menghilang?
+<pre>
+  # clear
+  # docker ps 
+  # docker-compose logs run
+</pre>
+
+<img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard53.png" alt="Preview Image" width="90%">
