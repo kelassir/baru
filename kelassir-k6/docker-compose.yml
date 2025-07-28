@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  k6:
+    image: grafana/k6
+    volumes:
+      - ./script.js:/script.js
+    environment:
+      - USERS=100  # Tukar nilai ini untuk 1, 100, atau 100+
+    command: run /script.js
