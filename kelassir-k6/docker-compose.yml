@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  k6:
+  run:
     image: grafana/k6
     volumes:
       - ./script.js:/script.js
