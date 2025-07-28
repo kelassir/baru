@@ -34,7 +34,7 @@ dan taip
 
 Tukar kepada password baru seperti 'toor' atau lain-lain.
 
-Setelah password root berjaya ditukar, kemudian bolehlah logout atau switch user ke root:kali
+Setelah password root berjaya ditukar, kemudian bolehlah logout atau switch user ke root:toor
 
 ps - apabila password baru ditaip di terminal, ianya tidak akan kelihatan pada screen. bertawakallah, insyaAllah key stroke itu akan berjaya disimpan dalam terminal. root:kali atau kali:kali bermaksud username:password atau login:password
 
