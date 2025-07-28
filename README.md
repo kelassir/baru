@@ -268,7 +268,7 @@ Run kan ke semua container melalui Docker-Compose secara Background (-d)
   # pwd
   # ls
   # tree
-  # docker-compose -up -d
+  # docker-compose up -d
 </pre>
 
 <img src="https://raw.githubusercontent.com/kelassir/baru/refs/heads/main/assets/baru-Clipboard35.png" alt="Preview Image" width="90%">
