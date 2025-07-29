@@ -16,6 +16,12 @@ $settings['hash_salt'] = 'replace_this_with_a_real_salt_value';
 $settings['redis.connection']['interface'] = 'PhpRedis';
 $settings['redis.connection']['host'] = 'redis3';
 
+$settings['cache']['default'] = 'cache.backend.redis';
+$settings['cache']['bins']['bootstrap'] = 'cache.backend.redis';
+$settings['cache']['bins']['discovery'] = 'cache.backend.redis';
+$settings['cache']['bins']['config'] = 'cache.backend.redis';
+
+$settings['container_yamls'][] = 'sites/default/redis.services.yml';
 // Use Redis for all caches, except a few
 $settings['cache']['default'] = 'cache.backend.redis';
 $settings['cache']['bins']['bootstrap'] = 'cache.backend.database';
