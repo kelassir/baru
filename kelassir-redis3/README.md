@@ -19,3 +19,4 @@ MYSQL_PASSWORD=drupalpass
 
 ## Assignment
 Install drupal di browser http://IP-ADDRESS:20200
+Test Redis Server di browser http://IP-ADDRESS:20204
