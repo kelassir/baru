@@ -70,5 +70,14 @@ next install redis di dalam container drupal
     && pecl install redis \
     && docker-php-ext-enable redis \
     && composer require drupal/redis
-  # nano /var/www/html/sites/default/redis.services.yml
+</pre>
+
+copy dari repository/redis.services.yml ke dalam file baru redis.services.yml
+<pre>
+    # nano /var/www/html/sites/default/redis.services.yml
+</pre>
+
+install drush
+<pre>
+  # composer require drush/drush
 </pre>
