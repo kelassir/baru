@@ -45,3 +45,12 @@ services:
     arguments: ['@redis.factory', '@cache_tags.invalidator.checksum', '@serialization.phpserialize']
 
 
+-- Install drush --
+
+composer require drush/drush
+
+
+-- Enable redis modul -- 
+
+vendor/bin/drush en redis -y
+
