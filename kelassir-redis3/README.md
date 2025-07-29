@@ -51,6 +51,9 @@ on TMUX CTRL+b %
 </pre>
 
 copy dari repository/settings.php ke dalam baris terakhir settings.php (jangan replace, tambah line jer)
+<pre>
+  # apt-get update && apt-get install -y nano
+</pre>
 
 next install redis di dalam container drupal
 <pre>
