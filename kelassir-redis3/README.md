@@ -77,7 +77,8 @@ next install redis di dalam container drupal
 
 copy dari repository/redis.services.yml ke dalam file baru redis.services.yml
 <pre>
-   # nano /var/www/html/sites/default/redis.services.yml
+  # nano /var/www/html/sites/default/redis.services.yml
+  # cat /var/www/html/sites/default/redis.services.yml
 </pre>
 
 install drush
