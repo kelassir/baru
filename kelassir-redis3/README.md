@@ -13,3 +13,6 @@ MYSQL_DATABASE=drupaldb
 MYSQL_USER=drupaluser
 MYSQL_PASSWORD=drupalpass
 ```
+<pre>
+  # docker-compose up
+</pre>
