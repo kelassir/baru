@@ -16,3 +16,6 @@ MYSQL_PASSWORD=drupalpass
 <pre>
   # docker-compose up
 </pre>
+
+## Assignment
+Install drupal di browser IP-ADDRESS:20200
