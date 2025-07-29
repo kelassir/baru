@@ -55,6 +55,8 @@ copy dari repository/settings.php ke dalam baris terakhir settings.php (jangan r
   # apt-get update && apt-get install -y nano
 </pre>
 
+orite check balik browser akan dapat error mesej kerana drupal telah dilencongkan ke redis tetapi redis belum siap configure sepenuhnya.
+
 next install redis di dalam container drupal
 <pre>
   # apt-get update && apt-get install -y \
@@ -74,10 +76,18 @@ next install redis di dalam container drupal
 
 copy dari repository/redis.services.yml ke dalam file baru redis.services.yml
 <pre>
-    # nano /var/www/html/sites/default/redis.services.yml
+   # nano /var/www/html/sites/default/redis.services.yml
 </pre>
 
 install drush
 <pre>
   # composer require drush/drush
 </pre>
+
+enable redis dan restart apache
+<pre>
+  # drush en redis -y
+  # apachectl restart
+</pre>
+
+orite check balik browser dah ok ke belum
