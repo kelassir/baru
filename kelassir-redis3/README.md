@@ -26,3 +26,26 @@ Test Redis Server di browser http://IP-ADDRESS:20204
 <pre>
   # docker pull grafana/grafana
 </pre>
+
+## Configure Redis to Drupal
+on TMUX CTRL+b c
+
+<pre>
+  # docker ps
+</pre>
+
+on TMUX CTRL+b "
+<pre>
+  # docker exec -it export3-drupal3-1 bash
+</pre>
+
+on TMUX CTRL+b %
+<pre>
+  # docker exec -it export3-drupal3-1 bash
+  # cd /var/www/html
+  # ls -l
+  # cd sites
+  # ls -l
+  # cd default
+  # ls -l
+</pre>
