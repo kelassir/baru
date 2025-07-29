@@ -1,0 +1,47 @@
+-- Install prerequisites --
+
+apt-get update && apt-get install -y \
+    libz-dev \
+    libpng-dev \
+    libonig-dev \
+    libzip-dev \
+    unzip \
+    git \
+    curl \
+    pkg-config \
+    libssl-dev \
+    && pecl install redis \
+    && docker-php-ext-enable redis
+
+
+-- Install Redis --
+
+pecl install redis
+
+
+-- Install Redis dalam container Drupal
+
+composer require drupal/redis
+
+
+-- Tambah config dalam (sites/default/settings.php) --
+
+$settings['redis.connection']['interface'] = 'PhpRedis';
+$settings['redis.connection']['host'] = 'redis3';
+
+$settings['cache']['default'] = 'cache.backend.redis';
+$settings['cache']['bins']['bootstrap'] = 'cache.backend.redis';
+$settings['cache']['bins']['discovery'] = 'cache.backend.redis';
+$settings['cache']['bins']['config'] = 'cache.backend.redis';
+
+$settings['container_yamls'][] = 'sites/default/redis.services.yml';
+
+
+-- Create file baru (redis.services.yml) --
+
+services:
+  cache.backend.redis:
+    class: Drupal\redis\Cache\CacheBackendFactory
+    arguments: ['@redis.factory', '@cache_tags.invalidator.checksum', '@serialization.phpserialize']
+
+
