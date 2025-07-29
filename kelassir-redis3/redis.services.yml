@@ -1,4 +1,7 @@
 services:
+  redis.factory:
+    class: Drupal\redis\ClientFactory
+
   cache.backend.redis:
     class: Drupal\redis\Cache\CacheBackendFactory
     arguments: ['@redis.factory', '@cache_tags.invalidator.checksum', '@serialization.phpserialize']
