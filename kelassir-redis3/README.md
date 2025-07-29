@@ -53,6 +53,7 @@ on TMUX CTRL+b %
 copy dari repository/settings.php ke dalam baris terakhir settings.php (jangan replace, tambah line jer)
 <pre>
   # apt-get update && apt-get install -y nano
+  # nano settings.php
 </pre>
 
 orite check balik browser akan dapat error mesej kerana drupal telah dilencongkan ke redis tetapi redis belum siap configure sepenuhnya.
