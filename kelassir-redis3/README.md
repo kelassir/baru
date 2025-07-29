@@ -18,4 +18,4 @@ MYSQL_PASSWORD=drupalpass
 </pre>
 
 ## Assignment
-Install drupal di browser IP-ADDRESS:20200
+Install drupal di browser http://IP-ADDRESS:20200
