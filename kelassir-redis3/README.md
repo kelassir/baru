@@ -65,5 +65,6 @@ next install redis di dalam container drupal
     pkg-config \
     libssl-dev \
     && pecl install redis \
-    && docker-php-ext-enable redis
+    && docker-php-ext-enable redis \
+    && composer require drupal/redis
 </pre>
