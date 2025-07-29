@@ -7,4 +7,4 @@ $settings['cache']['bins']['bootstrap'] = 'cache.backend.redis';
 $settings['cache']['bins']['discovery'] = 'cache.backend.redis';
 $settings['cache']['bins']['config'] = 'cache.backend.redis';
 
-$settings['container_yamls'][] = '/var/www/html/sites/default/myredis.services.yml';
+$settings['container_yamls'][] = '/var/www/html/sites/default/redis.services.yml';
