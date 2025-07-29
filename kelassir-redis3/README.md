@@ -49,3 +49,21 @@ on TMUX CTRL+b %
   # cd default
   # ls -l
 </pre>
+
+copy dari repository/settings.php ke dalam baris terakhir settings.php (jangan replace, tambah line jer)
+
+next install redis di dalam container drupal
+<pre>
+  # apt-get update && apt-get install -y \
+    libz-dev \
+    libpng-dev \
+    libonig-dev \
+    libzip-dev \
+    unzip \
+    git \
+    curl \
+    pkg-config \
+    libssl-dev \
+    && pecl install redis \
+    && docker-php-ext-enable redis
+</pre>
