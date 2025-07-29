@@ -8,7 +8,7 @@ services:
     volumes:
       - drupal_data3:/var/www/html
     environment:
-      - DRUPAL_DB_HOST=mysql
+      - DRUPAL_DB_HOST=mysql3
       - DRUPAL_DB_NAME=${MYSQL_DATABASE}
       - DRUPAL_DB_USER=${MYSQL_USER}
       - DRUPAL_DB_PASSWORD=${MYSQL_PASSWORD}
